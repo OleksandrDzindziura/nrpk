@@ -1,4 +1,4 @@
-A boilerplate for WordPress theme development using [TailwindCSS](https://tailwindcss.com/) and [Laravel Mix](https://laravel.com/docs/5.8/mix).
+A Made for NRPK using [TailwindCSS](https://tailwindcss.com/) and [Laravel Mix](https://laravel.com/docs/5.8/mix).
 
 ## Getting started:
 
@@ -8,9 +8,8 @@ A boilerplate for WordPress theme development using [TailwindCSS](https://tailwi
 1. Duplicate the `local-example.json` file to `local.json`, then replace the `proxy` value with your local 
 development hostname
    - This will allow you to use live reload/injection while working on your CSS/JS
-1. Run a search & replace across the theme to replace all instances of 'WpTailwindCssThemeBoilerplate' with a PHP 
+1. Run a search & replace across the theme to replace all instances of 'NRPK' with a PHP 
 namespace specific to your theme/project
-1. Change the theme information in `style.css`
 1. Activate your theme
 1. Run `npm run dev` and start coding
    
@@ -44,20 +43,4 @@ find a CSS rule being used in the templates, it removes it from the final CSS.
 
 See the `paths` option in the `mix.purgeCss()` invocation in `webpack.mix.js` for the file paths being looked at. 
 
-### How to tell Purge CSS to ignore things
-
-The easiest way is to delineate your CSS with comments as per the example below. See 
-[whitelisting](https://www.purgecss.com/whitelisting) for more options.   
-
-```css
-/* purgecss start ignore */
-h1 {
-  color: blue;
-}
-
-h3 {
-  color: green;
-}
-/* purgecss end ignore */
-```
 
